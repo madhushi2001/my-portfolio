@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: #1a1a2e;
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+            header h1 {
+                margin: 0;
+                font-size: 2.5em;
+            }
+
+            header p {
+                margin: 5px 0;
+                font-size: 1.1em;
+                color: #ddd;
+            }
+
+        nav {
+            background: #16213e;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                margin: 0 15px;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+
+                nav a:hover {
+                    color: #e94560;
+                }
+
+        section {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            color: #1a1a2e;
+            margin-bottom: 20px;
+            border-left: 5px solid #e94560;
+            padding-left: 10px;
+        }
+
+        .project-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+            max-width: 500px; /* card width */
+            text-align: center;
+        }
+
+            .project-card h3 {
+                color: #e94560;
+                margin-bottom: 10px;
+            }
+
+            .project-card img {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+                border-radius: 8px;
+                margin-bottom: 15px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            }
+
+            .project-card p {
+                margin: 10px 0;
+            }
+
+            .project-card .tech {
+                font-size: 0.9em;
+                color: #555;
+                margin: 5px 0;
+            }
+
+            .project-card .buttons {
+                margin-top: 15px;
+            }
+
+                .project-card .buttons a {
+                    display: inline-block;
+                    padding: 8px 12px;
+                    margin: 5px;
+                    background: #e94560;
+                    color: #fff;
+                    text-decoration: none;
+                    border-radius: 6px;
+                    font-size: 0.9em;
+                    transition: background 0.3s;
+                }
+
+                    .project-card .buttons a:hover {
+                        background: #16213e;
+                    }
+
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+            .card:hover {
+                transform: translateY(-5px);
+            }
+
+            .card img {
+                width: 100%;
+                border-radius: 10px;
+                margin-bottom: 15px;
+            }
+
+            .card h3 {
+                margin-top: 0;
+                color: #e94560;
+            }
+
+        .tech {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .buttons {
+            margin-top: 15px;
+        }
+
+            .buttons a {
+                display: inline-block;
+                padding: 8px 12px;
+                margin: 5px 8px 0 0;
+                background: #e94560;
+                color: #fff;
+                text-decoration: none;
+                border-radius: 6px;
+                font-size: 0.9em;
+                transition: background 0.3s;
+            }
+
+                .buttons a:hover {
+                    background: #16213e;
+                }
+
+        footer {
+            background: #1a1a2e;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+            footer a {
+                color: #e94560;
+                margin: 0 10px;
+                text-decoration: none;
+            }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Your Name</h1>
+        <p>Software Developer | Mobile & Web Applications</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate software developer with experience in building modern mobile and web applications. I enjoy solving real-world problems through clean and efficient code. My interests include Android development, web applications, and AI-powered solutions.</p>
+    </section>
+
+    <section id="projects">
+        <div class="project-card">
+            <h3>Replate Food App</h3>
+            <img src="images/replate1.jpg" alt="Replate App Screenshot">
+            <p>A mobile app designed to reduce food waste in Sri Lanka by connecting restaurants and users. Customers can buy surplus meals at discounted prices.</p>
+            <div class="tech"><b>Tech Stack:</b> Android (Java, XML), Firebase</div>
+            <div class="tech"><b>Features:</b> User authentication, restaurant listings, order history, delivery tracking</div>
+            <div class="buttons">
+                <a href="reports/Replate_Report.pdf" target="_blank">View Report</a>
+                <a href="https://github.com/yourgithub/replate" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <img src="images/luxevista.jpg" alt="LuxeVista Resort App Screenshot">
+            <h3>LuxeVista Resort App</h3>
+            <p>A luxury resort booking and service reservation app. Includes profile management, room booking, service reservations (spa, restaurant), and showcasing nearby attractions.</p>
+            <div class="tech"><b>Tech Stack:</b> Android (Java, SQLite), XML</div>
+            <div class="tech"><b>Features:</b> Login/registration, customer profile with booking history, room & service booking, attractions display, multilingual support</div>
+            <div class="buttons">
+
+                <a href="https://github.com/yourgithub/luxevista" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/fitzone.jpg" alt="FitZone Screenshot">
+            <h3>FitZone</h3>
+            <p>A fitness management system built with MySQL for managing workouts, diet plans, and tracking progress. Provides trainers and clients with easy access to fitness data.</p>
+            <div class="tech"><b>Tech Stack:</b> MySQL, PHP/Java backend, web interface</div>
+            <div class="tech"><b>Features:</b> User registration, workout plans, nutrition tracking, progress reports, trainer–client management</div>
+            <div class="buttons">
+
+                <a href="https://github.com/yourgithub/fitzone" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/gadgethub.jpg" alt="GadgetHub Screenshot">
+            <h3>GadgetHub</h3>
+            <p>A Service-Oriented Architecture (SOA) based e-commerce solution. The system connects to multiple distributors (TechWorld, ElectroCom, Gadget Central) to fetch product availability and pricing.</p>
+            <div class="tech"><b>Tech Stack:</b> Web (HTML, CSS, JS), APIs, SOA</div>
+            <div class="tech"><b>Features:</b> Search & filter products, distributor API integration, order placement, wishlist, order history</div>
+            <div class="buttons">
+
+                <a href="https://github.com/yourgithub/gadgethub" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="images/booksapp.jpg" alt="Books App Screenshot">
+            <h3>Books App</h3>
+            <p>A web app for students to buy and sell school books (Grades 6–11). Provides an easy-to-use platform for exchanging second-hand educational material.</p>
+            <div class="tech"><b>Tech Stack:</b> Web (HTML, CSS, JS, PHP/MySQL)</div>
+            <div class="tech"><b>Features:</b> User accounts, list a book for sale, search books by grade/subject, book verification, chat/contact options</div>
+            <div class="buttons">
+
+                <a href="https://github.com/yourgithub/booksapp" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>📧 Email: <a href="mailto:your@email.com">your@email.com</a></p>
+        <p>💼 LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+        <p>💻 GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Your Name | Built with ❤️</p>
+    </footer>
+
+</body>
+</html>
